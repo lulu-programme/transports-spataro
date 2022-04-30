@@ -1,0 +1,174 @@
+@font-face
+{
+	font-family: "spatalge";
+		src: url("../fichiers/Algerian_Regular.ttf");
+}
+@font-face
+{
+	font-family: "spatatitle";
+		src: url("../fichiers/ItaliaMd.ttf");
+}
+@font-face
+{
+	font-family: "spatatext";
+		src: url("../fichiers/ItalicC.ttf");
+}
+@font-face
+{
+	font-family: "spatalink";
+		src: url("../fichiers/Giro.otf");
+}
+a
+{
+	font-family: "spatalink";
+	color: #00a;
+	font-size: 15px;
+	text-decoration: none;
+}
+h1{font-family: "spatalge";}
+h2{font-family: "spatatitle";}
+.web{display: none;}
+.text>h1{font-size: 25px;text-align: center;}
+.img, .img_europe{align-self: center;margin: auto;}
+.title h2
+{
+	color: #00a;
+	display: block;
+}
+.mobile > .title
+{
+	display: grid;
+	grid-template-columns: auto auto;
+	grid-gap: 20px;
+}
+.info
+{
+	text-align: center;
+}
+.artone p
+{
+	border-bottom: solid 2px #00a;
+	border-top: solid 2px #00a;
+	text-align: center;
+	font-weight: bolder;
+	font-family: "spatatext";
+	width: 90%;
+	margin: auto;
+}
+.arteurope
+{
+	padding: 10px 0px;
+	width: 80%;
+	display: grid;
+	margin: auto;
+	align-self: center;
+}
+.arteurope h2{text-align:center;}
+.gallery
+{
+	display: grid;
+	grid-template-columns: auto auto;
+	grid-gap: 5px;
+	margin: auto;
+}
+.gallery img{width:75%;}
+
+@media only screen and (min-width: 1250px)
+{
+	.mobile{display: none;}
+	.img_title > img{padding: 0px 15px;}
+	.title h1{font-size: 40px;}
+	.img_europe{padding: 0px 30px;}
+	body 
+	{
+		background: url(../fichiers/fond_camion.jpg) no-repeat center center fixed;
+		background-size: cover;
+	}
+	.container
+	{
+		width: 95%;
+		font-size: 15px;
+		margin: auto;
+		background-color: rgba(255, 255, 255, 0.7);
+	}
+	.web, .gallery
+	{
+		display: grid;
+		grid-template-columns: auto auto auto;
+		grid-gap: 5px;
+	}
+	header > div
+	{
+		text-align: left;
+		align-content: space-between;
+	}
+	.img_title, .img_europe, .gallery > div
+	{
+		display: block;
+		margin: auto;
+	}	
+	section
+	{
+		margin: 0px;
+		padding-bottom: 15px;
+	}
+	.img_europe > img
+	{
+		border: solid 3px #000;
+		border-radius: 15%;
+	}
+	.artone > p
+	{
+		font-size: 18px;
+		padding: 20px 0px;
+	}
+	.arteurope
+	{
+		display: grid;
+		grid-template-columns: auto auto;
+		grid-gap: 5px;
+		padding: 20px;
+		width: 100%;
+	}
+	.arteurope h2
+	{
+		text-align: center;
+		text-decoration: underline 2px #00a;
+		font-size: 25px;
+	}
+	.arteurope p
+	{
+		padding: 0px 30px;
+		font-weight: 700;
+		font-size: 20px;
+	}
+	.arteurope p span
+	{
+		font-family: "spatatext";
+		color: #a00;
+		font-size: 17px;
+		text-decoration: underline dashed;
+		font-weight: bolder;
+	}
+	.arteurope .list_pays
+	{
+		display: flex;
+		margin-left: 5px;
+		padding : 0px 0px;
+	}
+	.arteurope .list_pays li
+	{
+		margin: 0px 5px;
+		padding: 0px 10px;
+		list-style: none;
+		font-weight: 700;
+		font-size: 17px;
+		border: #00a solid 2px;
+		border-radius: 35%;
+		background-color: #fff;
+	}
+	.gallery div:hover
+	{
+		width:100%;
+	}
+}
